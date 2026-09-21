@@ -8,6 +8,9 @@ RUN CGO_ENABLED=0 go build -trimpath -ldflags='-s -w' -o /uml-exporter .
 
 FROM alpine:3.21
 
+LABEL org.opencontainers.image.source="https://github.com/EastArctica/uml-campus-map-exporter"
+LABEL org.opencontainers.image.description="Prometheus exporter for UMass Lowell transit and parking data"
+
 RUN apk add --no-cache ca-certificates && adduser -D -H -u 65532 exporter
 COPY --from=build /uml-exporter /usr/local/bin/uml-exporter
 

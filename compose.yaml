@@ -1,0 +1,11 @@
+services:
+  uml-campus-map-exporter:
+    build: .
+    image: uml-campus-map-exporter:dev
+    container_name: uml-campus-map-exporter
+    restart: unless-stopped
+    ports:
+      - "9828:9828"
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
