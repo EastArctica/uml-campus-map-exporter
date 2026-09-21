@@ -63,8 +63,8 @@ Configuration is provided through command-line flags.
 | `uml_transit_vehicle_info` | Active vehicle metadata. |
 | `uml_transit_vehicle_latitude` | Vehicle latitude. |
 | `uml_transit_vehicle_longitude` | Vehicle longitude. |
-| `uml_transit_vehicle_speed` | Reported vehicle speed. |
-| `uml_transit_vehicle_heading_degrees` | Reported vehicle heading when supplied by UML. |
+| `uml_transit_vehicle_speed` | Vehicle speed in mph. |
+| `uml_transit_vehicle_heading_degrees` | Vehicle heading. |
 | `uml_transit_status_updates` | Number of currently published transit service updates. |
 | `uml_transit_latest_status_update_timestamp_seconds` | Latest published transit service-update timestamp. |
 | `uml_map_point_of_interest_info` | Campus-map point-of-interest metadata. |
